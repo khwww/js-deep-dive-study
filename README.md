@@ -1,4 +1,5 @@
-# 🟨js-deep-dive-study | 모던 자바스크립트 Deep Dive 스터디
+# <img src="https://velog.velcdn.com/images/dlwnghd/post/da4bbe28-91a6-4da8-91d7-0f5d67c5b7af/image.png" alt="Javascript" style="vertical-align: bottom;" width="30px"> js-deep-dive-study</br>모던 자바스크립트 Deep Dive 스터디
+
 
 ### 📅일정
 <img src="https://github.com/user-attachments/assets/c0d11f06-e9ed-40bc-8a71-abedfac191c0" width="350px" />
