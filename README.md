@@ -40,6 +40,13 @@
 
 ---
 
+<!-- 발표자료(ex1) : [발표자료타입명](발표링크) -->
+<!-- 발표자료(ex2) : [Notion](https://amethyst-cinnamon-178.notion.site/7c715e0fd72a4aa695874a491274228d) -->
+
+<!-- 자료타입(ex1) : [![자료 타입](뱃지 정의)](자료사용 타입 출처) -->
+<!-- 자료타입(ex2) : [![Notion](https://img.shields.io/badge/-Notion-FFFFFF?style=for-the-badge&logo=notion&logoColor=black)](https://www.notion.so/) -->
+<!-- 참고 자료 : https://velog.io/@cha-suyeon/github-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%A6%AC%EB%93%9C%EB%AF%B8%EC%97%90%EC%84%9C-%EB%B1%83%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0 -->
+
 ### 🗂️발표자료
 |          |  발표자  |  발표자료  |  자료 타입  |
 |----------|:-------:|:-------:|:-------:|
