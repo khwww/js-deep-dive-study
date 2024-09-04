@@ -53,7 +53,7 @@
 | 01주차   |    -    |    -   |   -    |
 | 02주차   | 박연기   | [Notion](https://amethyst-cinnamon-178.notion.site/7c715e0fd72a4aa695874a491274228d) | [![Notion](https://img.shields.io/badge/-Notion-FFFFFF?style=for-the-badge&logo=notion&logoColor=black)](https://www.notion.so/) |
 | 03주차   |   김현우 |    [Notion](https://sunrise-plantain-8b7.notion.site/3-cb5d3d88a6e34754ae7945ae3845844d) | [![Notion](https://img.shields.io/badge/-Notion-FFFFFF?style=for-the-badge&logo=notion&logoColor=black)](https://www.notion.so/)     |         |
-| 04주차   |         |         |         |
+| 04주차   | 허준성   | [Notion](https://www.notion.so/ch-23-6e934acd5dc948239828cfd5d9a4a0f5?pvs=4) | [![Notion](https://img.shields.io/badge/-Notion-FFFFFF?style=for-the-badge&logo=notion&logoColor=black)](https://www.notion.so/) |
 | 05주차   |         |         |         |
 | 06주차   |         |         |         |
 | 07주차   |         |         |         |
