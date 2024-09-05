@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    클로저 아닌 예제 2
+    
+    명목상 클로저긴 하지만 bar 함수를 반환하지 않아서 클로저라고 보기 어렵다.
+    <script>
+        function foo() {
+            const x = 1;
+            function bar() {
+                debugger;
+                console.log(x);
+            }
+            bar();
+        }
+        
+        foo();
+    </script>
+</body>
+</html>
