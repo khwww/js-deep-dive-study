@@ -15,7 +15,7 @@
 | 02주차   |    🟢   |    🟢  |    🟢   |   🟢   |         |    🟢   |    🟢   |        |         |
 | 03주차   |    🟢   |    🟢  |    🟢   |   🟢   |         |    🟢   |    🟢   |        |         |
 | 04주차   |    🟢   |   🟢   |    🟢   |   🟢   |   🟢    |   🟢   |    🟢   |   🟢   |    🟢  |
-| 05주차   |         |         |         |         |         |         |         |         |         |
+| 05주차   |    🟢   |    🟢  |    🟢   |   🟢   |   🟢    |  🟢    |    🟢   |   🟢   |    ❌  |
 | 06주차   |         |         |         |         |         |         |         |         |         |
 | 07주차   |         |         |         |         |         |         |         |         |         |
 | 08주차   |         |         |         |         |         |         |         |         |         |
@@ -32,7 +32,7 @@
 | 02주차   |    🟢   |    🟢  |    🟢   |   🟢   |         |    🟢   |    🟢   |        |         |
 | 03주차   |    🟢   |    🟢  |    🟢   |   🟢   |    🟢   |    🟢  |    🟢   |   🟢   |    🟢  |
 | 04주차   |    🟢   |    🟢  |    🟢   |  🟢    |    🟢   |    🟢  |    🟢   |   🟢   |   🟢   |
-| 05주차   |         |         |         |         |         |         |         |         |         |
+| 05주차   |    🟢   |    🟢  |    🟢   |   🟢   |    🟢   |   🟢   |    🟢   |   🟢   |   🟢   |
 | 06주차   |         |         |         |         |         |         |         |         |         |
 | 07주차   |         |         |         |         |         |         |         |         |         |
 | 08주차   |         |         |         |         |         |         |         |         |         |
@@ -47,14 +47,14 @@
 <!-- 자료타입(ex2) : [![Notion](https://img.shields.io/badge/-Notion-FFFFFF?style=for-the-badge&logo=notion&logoColor=black)](https://www.notion.so/) -->
 <!-- 참고 자료 : https://velog.io/@cha-suyeon/github-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%A6%AC%EB%93%9C%EB%AF%B8%EC%97%90%EC%84%9C-%EB%B1%83%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0 -->
 
-### 🗂️발표자료
+### 🗂️발표자료 
 |          |  발표자  |  발표자료  |  자료 타입  |
 |----------|:-------:|:-------:|:-------:|
 | 01주차   |    -    |    -   |   -    |
 | 02주차   | 박연기   | [Notion](https://amethyst-cinnamon-178.notion.site/7c715e0fd72a4aa695874a491274228d) | [![Notion](https://img.shields.io/badge/-Notion-FFFFFF?style=for-the-badge&logo=notion&logoColor=black)](https://www.notion.so/) |
 | 03주차   |   김현우 |    [Notion](https://sunrise-plantain-8b7.notion.site/3-cb5d3d88a6e34754ae7945ae3845844d) | [![Notion](https://img.shields.io/badge/-Notion-FFFFFF?style=for-the-badge&logo=notion&logoColor=black)](https://www.notion.so/)     |         |
 | 04주차   | 허준성   | [Notion](https://luminous-tuba-542.notion.site/ch-23-6e934acd5dc948239828cfd5d9a4a0f5?pvs=4) | [![Notion](https://img.shields.io/badge/-Notion-FFFFFF?style=for-the-badge&logo=notion&logoColor=black)](https://www.notion.so/) |
-| 05주차   |         |         |         |
+| 05주차   |   양준서   |    [Notion](https://granite-charger-fa5.notion.site/2024-09-11-3e816f57fa4c4d82b47e49999ccca2aa)     |    [![Notion](https://img.shields.io/badge/-Notion-FFFFFF?style=for-the-badge&logo=notion&logoColor=black)](https://www.notion.so/)     |
 | 06주차   |         |         |         |
 | 07주차   |         |         |         |
 | 08주차   |         |         |         |
