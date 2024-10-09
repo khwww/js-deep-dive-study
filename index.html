@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    <input type="text" />
+  <input id="user" type="text" value="ungmo2">
+  <script>
+    const $input = document.getElementById('user');
+
+    $input.oninput = () => {
+      console.log('value 프로퍼티 값', $input.value); // 사용자 입력 시마다 변경
+      console.log('value 어트리뷰트 값', $input.getAttribute('value')); // 초기값만 가져옴
+    };
+  </script>
 </body>
 </html>
