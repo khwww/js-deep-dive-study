@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>브라우저의 렌더링 과정</title>
+
+    <style>
+        .inline {
+            margin-left: 15px;
+        }
+
+        .align_center {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+
+
+    </script>
+</head>
+
+
+
+<body>
+
+<h2>웹 3대장은 어떤 과정으로 브라우저에 표현(렌더링)이 되는 걸까?</h2>
+<h3>웹 3대장</h3>
+<ol>
+    <li>HTML: 뼈대<span class="inline">▶ 웹사이트 콘텐츠 토대</span></li>
+    <li>CSS: 피부<span class="inline">▶ 디자인</span></li>
+    <li>Javascript: 근육<span class="inline">▶ 동적인 구성 요소</span></li>
+</ol>
+
+<hr>
+<figure>
+    <img src="../shi_images/img.png" height="422" width="706"/>
+    <figcaption>브라우저의 렌더링 과정</figcaption>
+</figure>
+
+
+<ol>
+    <li>브라우저: 서버에 렌더링에 필요한 리소스를 요청하고 응답을 받음</li>
+    <li>브라우저 렌더링 엔진: 서버로부터 응답받은 HTML, CSS를 파싱해서 DOM, CSSOM을 생성하고 렌더 트리를 생성</li>
+    <li>브라우저 자바스크립트 엔진: 서버로부터 응답받은 자바스크립트 파싱하여 AST생성, 바이트코드로 변환하여 실행<span class="inline">(이때 자바스크립트는 DOM API를 통해 DOM/CSSOM을 변경 가능, 변경된 DOM/CSSOM은 렌더 트리로 재결합)</span></li>
+    <li>렌더 트리를 기반으로 HTML 요소의 레이아웃 계산</li>
+    <li>브라우저 화면에 HTML 요소 페인팅</li>
+</ol>
+
+<hr>
+
+<h3>#1 브라우저: 서버에 요청 보내고 받기(Request & Response)</h3>
+<ol>
+    <li>브라우저의 주소창에 URL 입력</li>
+    <ul>
+        <li>URI: Uniform Resource Identifier 구조도</li>
+        <li><img src="../shi_images/img_1.png" width="500"/></li>
+    </ul>
+    <li>엔터 키 누름</li>
+    <li>URL의 호스트 이름이 DNS를 통해 IP주소로 변환</li>
+    <li>IP주소를 갖는 서버에게 요청 전송</li>
+    <li>서버에서 IP주소에 해당하는 데이터 응답</li>
+    <ul>
+        <li>루트 요청이라면 암묵적으로 index.html 응답 default 설정</li>
+        <li>루트 요청이 아니라면 설정된 경로에 있는 파일 응답</li>
+        <li>자바스크립트를 통해 서버에 정적/동적 데이터를 요청하는 것도 가능</li>
+        <li>개발자 도구 Network 패널에서 요청/응답사항 확인 가능</li>
+        <li><img src="../shi_images/img_15.png" width="500"/></li>
+        <li><img src="../shi_images/img_16.png" width="500"/></li>
+        <li>브라우저 렌더링 엔진은 html 파일뿐만 아니라 html에서 명시한 외부 리서스까지 서버에 요청하고 응답받음</li>
+    </ul>
+</ol>
+
+<hr>
+
+<h3>#2 HTML 파싱과 DOM 생성</h3>
+
+<ol>
+    <li>서버가 응답한 HTML: 문자열로 이루어진 순수한 text</li>
+    <li>브라우저가 이해할 수 있는 자료구조(DOM)로 변환, 메모리에 저장</li>
+    <li>브라우저에 렌더링</li>
+</ol>
+
+<hr>
+
+<figure>
+    <img src="../shi_images/img_17.png" width="500"/>
+    <figcaption>HTML parsing -> DOM 생성 예시 HTML</figcaption>
+</figure>
+
+<br>
+<br>
+
+<figure>
+    <img src="../shi_images/img_5.png" width="500"/>
+    <figcaption>HTML parsing -> DOM 생성</figcaption>
+</figure>
+
+<hr>
+
+<h3>#3 CSS 파싱과 CSSOM 생성</h3>
+
+<p>CSSOM 파싱 과정(DOM과 동일)</p>
+<ol>
+    <li>바이트</li>
+    <li>문자</li>
+    <li>토큰</li>
+    <li>노드</li>
+    <li>CSSOM(CSS Object Model)</li>
+    <li><img src="../shi_images/img_6.png" width="500"/></li>
+</ol>
+
+<hr>
+
+<h3>#4 렌더 트리 생성</h3>
+
+<p>DOM, CSSOM 생성한 다음에 이 둘을 결합해 렌더 트리로 결합(브라우저 화면에 보이는 노드만 only)</p>
+
+<figure>
+    <img src="../shi_images/img_19.png" height="766" width="1428"/>
+    <figcaption>렌더 트리 생성</figcaption>
+</figure>
+
+<br>
+
+<figure>
+    <img src="../shi_images/img_8.png" width="500"/>
+    <figcaption>렌더 트리와 레이아웃/페인트</figcaption>
+</figure>
+
+
+<br>
+
+<h4>리렌더링: 레이아웃 계산, 페인팅 재실행하는 작업(비용이 많이 들어서 지양 권장)</h4>
+
+<p>리렌더링 트리거</p>
+<ul>
+    <li>자바스크립트: 노드 추가/삭제</li>
+    <li>브라우저 창 리사이징: 뷰포트 크기 변경</li>
+    <li>HTML 요소 레이아웃에 변경을 발생시키는 스타일 변경</li>
+</ul>
+
+<hr>
+
+<h3>#5 자바스크립트 파싱, 실행</h3>
+
+<figure>
+    <img src="../shi_images/img_20.png" height="643" width="1305"/>
+    <figcaption>자바스크립트 파싱과 실행</figcaption>
+</figure>
+
+
+<hr>
+
+<h3>#6 리플로우, 리페인트</h3>
+
+<figure>
+    <img src="../shi_images/img_11.png" height="171" width="558"/>
+    <figcaption>DOM API 리플로우, 리페인트</figcaption>
+</figure>
+
+<hr>
+
+<h3>#7 script tag > async/defer attribute</h3>
+
+<figure>
+    <img src="../shi_images/img_12.png" height="334" width="562"/>
+    <figcaption>직렬적 파싱</figcaption>
+</figure>
+
+<br>
+
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src="../shi_images/img_13.png" height="84" width="542"/>
+                <figcaption>async</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src="../shi_images/img_14.png" height="84" width="514"/>
+                <figcaption>defer</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>
